@@ -1,5 +1,5 @@
 <templateSet group="Java">
-    <template name="val" value="val" shortcut="TAB" description="expands to &quot;final var&quot;" toReformat="true" toShortenFQNames="true">
+    <template name="val" value="final var" shortcut="TAB" description="expands to &quot;final var&quot;" toReformat="true" toShortenFQNames="true">
         <context>
             <option name="JAVA_STATEMENT" value="true" />
         </context>

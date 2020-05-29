@@ -1,12 +1,20 @@
 <idea-plugin>
     <id>me.peterfaria.values</id>
     <name>VALues</name>
-    <vendor url="https://github.com/zshift/VALues">Peter Faria</vendor>
+    <version>0.0.1</version>
+    <vendor url="https://github.com/zshift">Peter D. Faria</vendor>
 
     <description><![CDATA[
     Folds `final var` declarations into `val`, mimicking Kotlin.
 
     ]]></description>
+
+    <change-notes>
+        Initial release of the plugin.
+        Adding extra characters until IntelliJ stops complaining about min change notes length.
+    </change-notes>
+
+    <idea-version since-build="183"></idea-version>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -17,8 +25,4 @@
         <lang.foldingBuilder language="JAVA" implementationClass="me.peterfaria.values.ValFoldingBuilder"/>
         <defaultLiveTemplates file="/liveTemplates/Java.xml"/>
     </extensions>
-
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
 </idea-plugin>
