@@ -1,0 +1,24 @@
+<idea-plugin>
+    <id>me.peterfaria.values</id>
+    <name>VALues</name>
+    <vendor url="http://peterfaria.me">Peter Faria</vendor>
+
+    <description><![CDATA[
+    Folds `final var` declarations into `val`, mimicking Kotlin.
+
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.java</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <lang.foldingBuilder language="JAVA" implementationClass="me.peterfaria.values.ValFoldingBuilder"/>
+        <defaultLiveTemplates file="/liveTemplates/Java.xml"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
