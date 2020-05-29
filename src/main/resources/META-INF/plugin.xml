@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>me.peterfaria.values</id>
     <name>VALues</name>
-    <vendor url="http://peterfaria.me">Peter Faria</vendor>
+    <vendor url="https://github.com/zshift/VALues">Peter Faria</vendor>
 
     <description><![CDATA[
     Folds `final var` declarations into `val`, mimicking Kotlin.
