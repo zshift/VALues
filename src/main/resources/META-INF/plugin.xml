@@ -10,11 +10,10 @@
     ]]></description>
 
     <change-notes>
-        Initial release of the plugin.
-        Adding extra characters until IntelliJ stops complaining about min change notes length.
+        Fixes live template. Previously it expanded `val` into `val`, which wasn't very helpful.
     </change-notes>
 
-    <idea-version since-build="183"></idea-version>
+    <idea-version since-build="183"/>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
