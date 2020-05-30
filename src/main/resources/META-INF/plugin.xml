@@ -10,10 +10,11 @@
     ]]></description>
 
     <change-notes>
-        Fixes live template. Previously it expanded `val` into `val`, which wasn't very helpful.
+        Added a couple configuration options to global settings.
+        Added debug logs to help with any future issues.
     </change-notes>
 
-    <idea-version since-build="183"/>
+    <idea-version since-build="201.836"/>
 
     <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
          on how to target different products -->
@@ -23,5 +24,8 @@
     <extensions defaultExtensionNs="com.intellij">
         <lang.foldingBuilder language="JAVA" implementationClass="me.peterfaria.values.ValFoldingBuilder"/>
         <defaultLiveTemplates file="/liveTemplates/Java.xml"/>
+        <applicationService serviceImplementation="me.peterfaria.values.ValState"/>
+        <applicationConfigurable parentId="tools" instance="me.peterfaria.values.ValConfigurable"
+                                 id="me.peterfaria.values.ValConfigurable" displayName="VALues Settings"/>
     </extensions>
 </idea-plugin>
